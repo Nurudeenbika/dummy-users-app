@@ -1,6 +1,6 @@
 # Dummy Users App
 
-The **Dummy Users App** is a React application built with **Vite**, **TypeScript**, and **Vitest**. It fetches a list of dummy users from the [DummyJSON API](https://dummyjson.com/docs/users) and displays their full names and email addresses. When a user is clicked, their detailed information (first name, last name, email, and gender) is displayed. The application follows best practices and includes comprehensive testing with **Vitest** and **Istanbul** for 95% to 100% test coverage.
+The **Dummy Users App** is a React application built with **Vite**, **TypeScript**, and **Vitest**. It fetches a list of dummy users from the [DummyJSON API](https://dummyjson.com/docs/users) and displays their full names and email addresses. When a user is clicked, their detailed information (first name, last name, email, and gender) is displayed. The application follows best practices and includes comprehensive testing with **Vitest** and **Istanbul** for 90% to 100% test coverage.
 
 ---
 
@@ -9,7 +9,7 @@ The **Dummy Users App** is a React application built with **Vite**, **TypeScript
 - **Fetch and Display Users**: Fetches 20 dummy users from the DummyJSON API and displays their full names and email addresses.
 - **User Details**: Click on a user to view their detailed information, including first name, last name, email, and gender.
 - **Professional Design**: A clean and responsive user interface.
-- **Testing**: Comprehensive unit tests with **Vitest** and **Istanbul** for 95% to 100% test coverage.
+- **Testing**: Comprehensive unit tests with **Vitest** and **Istanbul** for 90% to 100% test coverage.
 - **Type Safety**: Built with **TypeScript** for type safety and better developer experience.
 
 ---
