@@ -1,51 +1,60 @@
-# React + TypeScript + Vite
+# Dummy Users App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Dummy Users App** is a React application built with **Vite**, **TypeScript**, and **Vitest**. It fetches a list of dummy users from the [DummyJSON API](https://dummyjson.com/docs/users) and displays their full names and email addresses. When a user is clicked, their detailed information (first name, last name, email, and gender) is displayed. The application follows best practices and includes comprehensive testing with **Vitest** and **Istanbul** for 95% to 100% test coverage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Fetch and Display Users**: Fetches 20 dummy users from the DummyJSON API and displays their full names and email addresses.
+- **User Details**: Click on a user to view their detailed information, including first name, last name, email, and gender.
+- **Professional Design**: A clean and responsive user interface.
+- **Testing**: Comprehensive unit tests with **Vitest** and **Istanbul** for 95% to 100% test coverage.
+- **Type Safety**: Built with **TypeScript** for type safety and better developer experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool for modern web development.
+- **TypeScript**: A typed superset of JavaScript for better code quality.
+- **Vitest**: A fast and lightweight testing framework for Vite.
+- **Istanbul**: A code coverage tool for JavaScript.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Testing Library**: A library for testing React components.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# dummy-users-app
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/dummy-users-app.git
+   cd dummy-users-app
+
+**Install Dependencies**:
+
+  ```bash
+  npm install
+  Run the Development Server:
+
+  npm run dev
+
+
+##Open the App:
+Visit http://localhost:5173 in your browser to view the app.  
+
+Running Tests
+The application includes comprehensive unit tests written with Vitest. To run the tests:
+
+Run All Tests:
+
+npm test
+Run Tests with Coverage:
+
+npm run coverage
+
+
