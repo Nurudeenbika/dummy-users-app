@@ -10,6 +10,10 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("<h3>Server is running!</h3>");
+});
+
 // Fetch all users
 app.get("/api/users", async (req, res) => {
   try {
